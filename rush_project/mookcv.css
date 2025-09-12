@@ -52,21 +52,28 @@ a:hover{
 }
 .navbar {
     margin-top: 0;
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
     z-index: 9;
     padding: 1vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6); /* แทน opacity ด้วย rgba */
 }
+
 .navbar .navlist {
+    margin-top: 10px;
     display: flex;
     gap: 6vw;
     font-size: 1.2vw;
     font-family: 'Jost', sans-serif;
-    color: white;
-    background-color: #000000;
+    color: white; /* ตัวหนังสือยังขาว 100% */
+    background-color: rgba(0, 0, 0, 0); /* ให้โปร่งใสเฉพาะ bg */
     border-radius: 20px;
+    position: fixed;
 }
+
 .contact {
     margin-right: 30px;
 }
