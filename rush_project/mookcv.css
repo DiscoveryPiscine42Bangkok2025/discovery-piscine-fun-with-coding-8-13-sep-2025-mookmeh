@@ -4,10 +4,10 @@
     box-sizing: border-box;
     background-color: #000000;
 }
-body {
+/* body {
     height: 100vh;
     overflow-x: hidden;
-}
+} */
 
 table {
     margin: auto;
