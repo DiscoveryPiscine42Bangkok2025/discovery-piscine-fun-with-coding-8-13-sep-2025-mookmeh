@@ -160,36 +160,37 @@
             <br>
             <br>
         </div>
+        <script>
+            const firstName = "Chutikanmanee";
+            const surName = "Winijratanaporn";
+
+            const typingFirst = document.getElementById("typing-name");
+            const typingLast = document.getElementById("typing-surname");
+
+            let index = 0;
+
+            function typeFirstName() {
+                if (index < firstName.length) {
+                typingFirst.textContent += firstName.charAt(index);
+                index++;
+                setTimeout(typeFirstName, 120);
+                } else {
+                index = 0;
+                setTimeout(typeLastName, 400);
+                }
+            }
+
+            function typeLastName() {
+                if (index < surName.length) {
+                typingLast.textContent += surName.charAt(index);
+                index++;
+                setTimeout(typeLastName, 120);
+                }
+            }
+
+            window.onload = typeFirstName;
+        </script>
+
     </body>
 </html>
 
-<script>
-  const firstName = "Chutikanmanee";
-  const surName = "Winijratanaporn";
-
-  const typingFirst = document.getElementById("typing-name");
-  const typingLast = document.getElementById("typing-surname");
-
-  let index = 0;
-
-  function typeFirstName() {
-    if (index < firstName.length) {
-      typingFirst.textContent += firstName.charAt(index);
-      index++;
-      setTimeout(typeFirstName, 120);
-    } else {
-      index = 0;
-      setTimeout(typeLastName, 400);
-    }
-  }
-
-  function typeLastName() {
-    if (index < surName.length) {
-      typingLast.textContent += surName.charAt(index);
-      index++;
-      setTimeout(typeLastName, 120);
-    }
-  }
-
-  window.onload = typeFirstName;
-</script>
