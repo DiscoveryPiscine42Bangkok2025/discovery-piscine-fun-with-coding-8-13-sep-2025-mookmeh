@@ -59,7 +59,7 @@ a:hover{
     z-index: 9;
     padding: 1vw;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.6); /* แทน opacity ด้วย rgba */
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar .navlist {
@@ -68,8 +68,8 @@ a:hover{
     gap: 6vw;
     font-size: 1.2vw;
     font-family: 'Jost', sans-serif;
-    color: white; /* ตัวหนังสือยังขาว 100% */
-    background-color: rgba(0, 0, 0, 0); /* ให้โปร่งใสเฉพาะ bg */
+    color: white;
+    background-color: rgba(0, 0, 0, 0); 
     border-radius: 20px;
     position: fixed;
 }
